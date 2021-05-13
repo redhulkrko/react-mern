@@ -13,7 +13,7 @@ function App() {
     <div className="app-wrapper">
       <Navbar />
       <Switch>
-        <Route path="/signup" component={Signup} />
+        <ProtectedRoute path="/signup" component={Signup} />
         <Route path="/login" component={Login} />
         <ProtectedRoute path="/todos" component={TodoList} />
         <Route exact path="/" render={() => <Redirect to="/todos" />} />

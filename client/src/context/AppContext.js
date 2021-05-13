@@ -66,13 +66,6 @@ export class AppContextProvider extends Component {
 
   signup = (userInfo) => {
     return todoAxios.post("/auth/signup", userInfo).then((response) => {
-      const { user, token } = response.data;
-      localStorage.setItem("token", token);
-      localStorage.setItem("user", JSON.stringify(user));
-      this.setState({
-        user,
-        token,
-      });
       return response;
     });
   };

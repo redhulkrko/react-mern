@@ -4,9 +4,7 @@
   "description": "The server-side beginning setup for learning token authentication in React. For instructions on server-side setup, please visit https://coursework.vschool.io/token-auth-with-jwts-part1/",
   "main": "index.js",
   "scripts": {
-    "react-client": "cd client && yarn start",
-    "server": "node index.js",
-    "start": "concurrently \"yarn react-client\" \"yarn server\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
